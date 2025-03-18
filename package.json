@@ -1,17 +1,19 @@
 {
-  "name": "chatbot-widget",
+  "name": "chatbot-widget-studylib",
   "private": false,
-  "version": "0.1.0",
+  "version": "0.2.0",
   "type": "module",
   "files": [
     "dist"
   ],
-  "main": "./dist/index.umd.cjs",
-  "module": "./dist/index.js",
+  "main": "./dist/index.umd.js",
+  "module": "./dist/index.es.js",
+  "types": "./dist/index.d.ts",
+  "sideEffects": false,
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.umd.cjs"
+      "import": "./dist/index.es.js",
+      "require": "./dist/index.umd.js"
     },
     "./style.css": "./dist/index.css"
   },

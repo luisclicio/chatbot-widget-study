@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chatbot Widget</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/chatbot-widget-studylib/dist/index.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/chatbot-widget-studylib/dist/index.umd.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <div id="chat"></div>
+
+    <script type="module" defer>
+      import { ChatbotWidget } from 'https://esm.run/chatbot-widget-studylib';
+
+      const chatbotWidget = new ChatbotWidget({
+        rootElement: document.getElementById('chat'),
+        ui: {
+          width: 360,
+          position: {
+            right: 16,
+            bottom: 16,
+          },
+        },
+      });
+
+      chatbotWidget.render();
+    </script>
+  </body>
+</html>
